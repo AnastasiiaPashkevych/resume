@@ -1,0 +1,197 @@
+/* roboto-regular - latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url("assets/fonts/roboto-v20-latin/roboto-v20-latin-regular.eot"); /* IE9 Compat Modes */
+    src: local(""),
+    url("assets/fonts/roboto-v20-latin/roboto-v20-latin-regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../../assets/fonts/roboto-v20-latin/roboto-v20-latin-regular.woff2") format("woff2"), /* Super Modern Browsers */ url("../../assets/fonts/roboto-v20-latin/roboto-v20-latin-regular.woff") format("woff"), /* Modern Browsers */ url("../../assets/fonts/roboto-v20-latin/roboto-v20-latin-regular.ttf") format("truetype"), /* Safari, Android, iOS */ url("../../assets/fonts/roboto-v20-latin/roboto-v20-latin-regular.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+
+/* roboto-500 - latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    src: url("assets/fonts/roboto-v20-latin/roboto-v20-latin-500.eot"); /* IE9 Compat Modes */
+    src: local(""),
+    url("assets/fonts/roboto-v20-latin/roboto-v20-latin-500.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../../assets/fonts/roboto-v20-latin/roboto-v20-latin-500.woff2") format("woff2"), /* Super Modern Browsers */ url("../../assets/fonts/roboto-v20-latin/roboto-v20-latin-500.woff") format("woff"), /* Modern Browsers */ url("../../assets/fonts/roboto-v20-latin/roboto-v20-latin-500.ttf") format("truetype"), /* Safari, Android, iOS */ url("../../assets/fonts/roboto-v20-latin/roboto-v20-latin-500.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+
+/* roboto-700 - latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src: url("assets/fonts/roboto-v20-latin/roboto-v20-latin-700.eot"); /* IE9 Compat Modes */
+    src: local(""),
+    url("assets/fonts/roboto-v20-latin/roboto-v20-latin-700.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../../assets/fonts/roboto-v20-latin/roboto-v20-latin-700.woff2") format("woff2"), /* Super Modern Browsers */ url("../../assets/fonts/roboto-v20-latin/roboto-v20-latin-700.woff") format("woff"), /* Modern Browsers */ url("../../assets/fonts/roboto-v20-latin/roboto-v20-latin-700.ttf") format("truetype"), /* Safari, Android, iOS */ url("../../assets/fonts/roboto-v20-latin/roboto-v20-latin-700.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+
+/* roboto-900 - latin */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    src: url("assets/fonts/roboto-v20-latin/roboto-v20-latin-900.eot"); /* IE9 Compat Modes */
+    src: local(""),
+    url("assets/fonts/roboto-v20-latin/roboto-v20-latin-900.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("../../assets/fonts/roboto-v20-latin/roboto-v20-latin-900.woff2") format("woff2"), /* Super Modern Browsers */ url("../../assets/fonts/roboto-v20-latin/roboto-v20-latin-900.woff") format("woff"), /* Modern Browsers */ url("../../assets/fonts/roboto-v20-latin/roboto-v20-latin-900.ttf") format("truetype"), /* Safari, Android, iOS */ url("../../assets/fonts/roboto-v20-latin/roboto-v20-latin-900.svg#Roboto") format("svg"); /* Legacy iOS */
+}
+
+
+html, p, div, h1, h2, section, ul {
+    margin: 0;
+    padding: 0;
+}
+
+:focus {
+    outline: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    color: #ccc;
+}
+
+.header_h2 {
+    color: #07eee0;
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/*Header section styles start*/
+.header {
+    padding: 50px 10px 100px 10px;
+    background-image: url(assets/images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_title {
+
+}
+
+.header__subtitle {
+
+}
+/*Header section styles end*/
+
+/*About section styles start*/
+.about {
+    background-color: #070710;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around
+}
+
+.about-photo {
+    position: relative;
+    border: 5px solid #07eee0;
+    width: 300px;
+    height: 300px;
+}
+
+.about-photo__pic {
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    max-width: 300px;
+}
+
+.about__title {
+    margin-bottom: 20px;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+
+.about-list {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.about-list__item {
+    margin-bottom: 10px;
+}
+
+.list-item__title {
+    color: #07eee0;
+    text-transform: uppercase;
+}
+/*About section styles end*/
+
+/*Education section styles start*/
+.education {
+    background-color: #203b37;
+    padding: 50px;
+}
+
+.education__title {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.block {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.block-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    position: absolute;
+    border: 1px solid #07eee0;
+    height: 100%;
+    top: -50px;
+    right: 50%;
+}
+
+.block-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.block__item {
+    margin-bottom: 100px;
+    max-width: 450px;
+}
+
+.block__item__right {
+    text-align: right;
+}
+.block__item__left {
+    text-align: left;
+}
+
+.block__title {
+    color: #07eee0;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+/*Education section styles end*/
