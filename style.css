@@ -307,8 +307,8 @@ body {
 }
 
 .works__button:hover {
-  cursor: pointer;
   opacity: 0.7;
+  cursor: pointer;
 }
 
 .works__gallery {
@@ -329,11 +329,20 @@ body {
   justify-content: center;
   background-size: cover;
   background-position: center 0;
+  position: relative;
 }
 
-.works__item:hover {
-  cursor: pointer;
-  opacity: 0.8;
+.works__item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(1, 1, 1, 0.7);
+  visibility: hidden;
+}
+.works__item:hover::after {
+  visibility: visible;
 }
 
 .works__item_1 {
@@ -354,7 +363,6 @@ body {
 
 .works__item_4 {
   grid-area: item-4;
-  background-color: red;
   background-image: url(assets/images/works-zoo.jpg);
 }
 
@@ -366,6 +374,20 @@ body {
 .works__item_6 {
   grid-area: item-6;
   background-image: url(assets/images/works-wildlife.jpg);
+}
+
+.work__link {
+  visibility: hidden;
+  position: absolute;
+  bottom: 45%;
+  left: calc(50%-50px);
+  color: #07eee0;
+  font-weight: 400;
+  font-size: 36px;
+  display: block;
+}
+.works__item:hover .work__link {
+  visibility: visible;
 }
 
 /*Works section styles end*/
