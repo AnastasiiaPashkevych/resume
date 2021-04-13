@@ -66,6 +66,7 @@ body {
   padding: 0;
   font-family: "Roboto", sans-serif;
   color: #ccc;
+  background-color: #070710;
 }
 
 .header_h2 {
@@ -238,18 +239,23 @@ body {
 .meter__line_html {
   width: 80%;
 }
+
 .meter__line_css {
   width: 70%;
 }
+
 .meter__line_js {
   width: 40%;
 }
+
 .meter__line_ps {
   width: 60%;
 }
+
 .meter__line_sql {
   width: 50%;
 }
+
 .meter__line_c {
   width: 55%;
 }
@@ -271,3 +277,95 @@ body {
 }
 
 /*Skills section styles end*/
+
+/*Works section styles start*/
+.works {
+  margin-bottom: 100px;
+}
+.works__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.works__inner {
+  padding: 20px;
+  background-image: url(assets/images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.works__button {
+  padding: 10px 20px;
+  background-color: #070710;
+  color: #07eee0;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+}
+
+.works__button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.works__gallery {
+  padding: 50px;
+  width: 1200px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  grid-gap: 40px;
+  grid-template-areas:  "item-1 item-2 item-3"
+                        "item-4 item-5 item-6";
+}
+
+.works__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center 0;
+}
+
+.works__item:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.works__item_1 {
+  grid-area: item-1;
+  background-image: url(assets/images/works-travel.jpg);
+}
+
+.works__item_2 {
+  grid-area: item-2;
+  background-image: url(assets/images/works-witcher.jpg);
+}
+
+.works__item_3 {
+  grid-area: item-3;
+  background-image: url(assets/images/works-skinali.jpg);
+  background-position: center;
+}
+
+.works__item_4 {
+  grid-area: item-4;
+  background-color: red;
+  background-image: url(assets/images/works-zoo.jpg);
+}
+
+.works__item_5 {
+  grid-area: item-5;
+  background-image: url(assets/images/works-piano.jpg);
+}
+
+.works__item_6 {
+  grid-area: item-6;
+  background-image: url(assets/images/works-wildlife.jpg);
+}
+
+/*Works section styles end*/
