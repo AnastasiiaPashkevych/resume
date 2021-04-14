@@ -73,6 +73,10 @@ body {
   color: #07eee0;
   text-transform: uppercase;
 }
+.header_h3 {
+  color: #07eee0;
+  text-transform: uppercase;
+}
 
 .container {
   max-width: 1300px;
@@ -87,14 +91,6 @@ body {
   background-size: cover;
 }
 
-.header_title {
-
-}
-
-.header__subtitle {
-
-}
-
 /*Header section styles end*/
 
 /*About section styles start*/
@@ -102,7 +98,8 @@ body {
   background-color: #070710;
   padding: 50px;
   display: flex;
-  justify-content: space-around
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .about-photo {
@@ -142,6 +139,52 @@ body {
   text-transform: uppercase;
 }
 
+.interests {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  flex: none;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.interests__title {
+  margin-bottom: 30px;
+}
+
+.interests__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.interests__item {
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.youtube-item {
+  background-image: url(assets/images/youtube-icon.svg);
+}
+.coffee-item {
+  background-image: url(assets/images/coffee-icon.svg);
+}
+.tennis-item {
+  background-image: url(assets/images/tenis-icon.svg);
+}
+.scooter-item {
+  background-image: url(assets/images/scooter-icon.svg);
+}
+.chocolate-item {
+  background-image: url(assets/images/chocolate-icon.svg);
+}
+.walking-item {
+  background-image: url(assets/images/walking-icon.svg);
+}
+.cat-item {
+  background-image: url(assets/images/cat-icon.svg);
+}
 /*About section styles end*/
 
 /*Education section styles start*/
