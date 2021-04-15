@@ -434,6 +434,8 @@ body {
   background-size: cover;
   background-position: center 0;
   position: relative;
+
+  transition: transform .3s linear;
 }
 
 .works__item::after {
@@ -442,7 +444,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(1, 1, 1, 0.7);
+  background-color: rgba(1, 1, 1, 0.5);
   visibility: hidden;
 }
 .works__item:hover::after {
@@ -483,15 +485,51 @@ body {
 .work__link {
   visibility: hidden;
   position: absolute;
-  bottom: 45%;
+  bottom: 10%;
   left: calc(50%-50px);
   color: #07eee0;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 18px;
+  letter-spacing: 1px;
   display: block;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-image: url(assets/images/right-arrow-icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center right;
 }
-.works__item:hover .work__link {
+.work__link:hover {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.work__text {
+  visibility: hidden;
+  position: absolute;
+  top: 10%;
+  left: calc(50%-50px);
+  color: #07eee0;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 1px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #07eee0;
+  border-radius: 50%;
+  background-color: rgba(1, 1, 1, 0.2);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.works__item:hover .work__link,
+.works__item:hover .work__text,
+.works__item:hover .work__link::after {
   visibility: visible;
+}
+.works__item:hover {
+  transform: scale(1.05);
 }
 
 /*Works section styles end*/
