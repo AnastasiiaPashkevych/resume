@@ -39,7 +39,7 @@
 }
 
 
-html, p, div, h1, h2, section, ul {
+html, p, div, h1, h2, h3, section, ul {
   margin: 0;
   padding: 0;
 }
@@ -123,9 +123,20 @@ body {
 .github-link {
   background-image: url(assets/images/github.svg);
 }
+
 .socials__link:hover {
   transform: scale(1.1);
 }
+
+@media (max-width: 500px) {
+  .header {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
 /*Header section styles end*/
 
 /*About section styles start*/
@@ -156,7 +167,7 @@ body {
 }
 
 .about-text {
-  max-width: 600px;
+  max-width: 550px;
 }
 
 
@@ -227,6 +238,26 @@ body {
   background-image: url(assets/images/cat-icon.svg);
 }
 
+@media (max-width: 1000px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .interests {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .interests__item {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 /*About section styles end*/
 
 /*Education section styles start*/
@@ -241,14 +272,16 @@ body {
 }
 
 .block {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
   position: relative;
 }
 
 .block-left {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 }
 
 .line {
@@ -295,15 +328,15 @@ body {
 }
 
 .pseudo-1 {
-  top: 80px;
+  top: 70px;
 }
 
 .pseudo-2 {
-  top: 200px;
+  top: 230px;
 }
 
 .pseudo-3 {
-  top: 350px;
+  top: 390px;
 }
 
 .pseudo-1::after, .pseudo-2::after, .pseudo-3::after {
@@ -336,6 +369,7 @@ body {
 .block__item {
   margin-bottom: 100px;
   max-width: 450px;
+  min-height: 70px;
 }
 
 .block__item__right {
@@ -353,6 +387,34 @@ body {
   margin-bottom: 10px;
 }
 
+@media (max-width: 500px) {
+  .block__description {
+    display: none;
+  }
+
+  .line {
+    right: 0;
+  }
+
+  .block__item__left,
+  .block__item__right {
+    text-align: left;
+  }
+
+  .block {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+
+  .block-left {
+    align-items: flex-start;
+  }
+
+  .block__item {
+    padding-right: 50px;
+  }
+}
+
 /*Education section styles end*/
 
 /*Skills section styles start*/
@@ -367,14 +429,14 @@ body {
 }
 
 .skills__inner {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
 }
 
 .meter {
   height: 10px;
-  width: 500px;
+  max-width: 500px;
   position: relative;
   background: #555;
   flex: none;
@@ -416,7 +478,7 @@ body {
 
 .meter__title {
   position: absolute;
-  top: -50px;
+  top: -35px;
   left: 0;
 }
 
@@ -428,6 +490,22 @@ body {
 
 .meter__title, .meter__percent {
   font-weight: 700;
+}
+
+@media (max-width: 1000px) {
+  .skills__inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .skills {
+    padding: 20px;
+  }
+
+  .meter__percent {
+    display: none;
+  }
 }
 
 /*Skills section styles end*/
@@ -468,7 +546,7 @@ body {
 
 .works__gallery {
   padding: 50px;
-  width: 1200px;
+  max-width: 1300px;
   margin-bottom: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -479,6 +557,8 @@ body {
 }
 
 .works__item {
+  width: 300px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -586,6 +666,50 @@ body {
 .works__item:hover {
   transform: scale(1.05);
 }
+
+@media (max-width: 1300px) {
+  .works__gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas:  "item-1 item-2"
+                          "item-3 item-4"
+                          "item-5 item-6";
+  }
+}
+
+@media (max-width: 800px) {
+  .works__gallery {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 300px);
+    grid-template-areas:  "item-1"
+                          "item-2"
+                          "item-3"
+                          "item-4"
+                          "item-5"
+                          "item-6";
+  }
+}
+
+@media (max-width: 500px) {
+  .works__gallery {
+    grid-gap: 10px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .works__gallery {
+    grid-template-rows: repeat(6, 200px);
+  }
+
+  .works__item {
+    width: 200px;
+    height: 200px;
+  }
+
+}
+
+
 /*Works section styles end*/
 
 /*Footer styles start*/
