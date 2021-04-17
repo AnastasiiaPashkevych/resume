@@ -149,17 +149,13 @@ body {
 }
 
 .about-photo {
-  position: relative;
   border: 5px solid #07eee0;
-  width: 300px;
-  height: 300px;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 .about-photo__pic {
-  position: absolute;
-  top: 20px;
-  left: -20px;
-  max-width: 300px;
+  width: 100%;
 }
 
 .about__title {
@@ -210,6 +206,10 @@ body {
   background-size: contain;
 }
 
+.interests__item:hover {
+  transform: scale(1.1);
+}
+
 .youtube-item {
   background-image: url(assets/images/youtube-icon.svg);
 }
@@ -255,6 +255,9 @@ body {
   .interests__item {
     width: 30px;
     height: 30px;
+  }
+  .about {
+    padding: 10px;
   }
 }
 
@@ -452,6 +455,18 @@ body {
   background-color: #07eee0;
 }
 
+.meter__line::after {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  right: -5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #07eee0;
+}
+
 .meter__line_html {
   width: 80%;
 }
@@ -618,7 +633,6 @@ body {
   visibility: hidden;
   position: absolute;
   bottom: 10%;
-  left: calc(50% - 50px);
   color: #07eee0;
   font-weight: 400;
   font-size: 18px;
@@ -641,7 +655,6 @@ body {
   visibility: hidden;
   position: absolute;
   top: 10%;
-  left: calc(50% - 50px);
   color: #07eee0;
   font-weight: 400;
   font-size: 18px;
@@ -693,20 +706,14 @@ body {
 @media (max-width: 500px) {
   .works__gallery {
     grid-gap: 10px;
-    padding: 10px;
+    padding: 10px 0;
   }
 }
 
 @media (max-width: 500px) {
   .works__gallery {
-    grid-template-rows: repeat(6, 200px);
+    grid-template-rows: repeat(6, 300px);
   }
-
-  .works__item {
-    width: 200px;
-    height: 200px;
-  }
-
 }
 
 
