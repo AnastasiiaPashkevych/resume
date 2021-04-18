@@ -600,34 +600,34 @@ body {
 
 .works__item_1 {
   grid-area: item-1;
-  background-image: url(assets/images/works-travel.jpg);
-}
-
-.works__item_2 {
-  grid-area: item-2;
-  background-image: url(assets/images/works-witcher.jpg);
-}
-
-.works__item_3 {
-  grid-area: item-3;
   background-image: url(assets/images/works-skinali.jpg);
   background-position: center;
 }
 
-.works__item_4 {
-  grid-area: item-4;
-  background-image: url(assets/images/works-zoo.jpg);
+.works__item_2 {
+  grid-area: item-2;
+  background-image: url(assets/images/works-travel.jpg);
 }
 
+.works__item_3 {
+  grid-area: item-3;
+  background-image: url(assets/images/works-witcher.jpg);
+}
+.works__item_4 {
+  grid-area: item-4;
+  background-image: url(assets/images/works-wildlife.jpg);
+}
 .works__item_5 {
   grid-area: item-5;
   background-image: url(assets/images/works-piano.jpg);
 }
-
 .works__item_6 {
   grid-area: item-6;
-  background-image: url(assets/images/works-wildlife.jpg);
+  background-image: url(assets/images/works-zoo.jpg);
 }
+
+
+
 
 .work__link {
   visibility: hidden;
